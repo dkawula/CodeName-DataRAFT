@@ -179,7 +179,7 @@ function Write-Log
     [string]$message
   )
 
-  Write-Object "[$(Get-Date -format T)] - [$systemName]::$($message)"
+  Write-Output "[$(Get-Date -format T)] - [$systemName]::$($message)"
 }
 
 function Clear-File
